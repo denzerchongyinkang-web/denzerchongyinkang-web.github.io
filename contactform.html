@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decked Out Tech — Contact Us</title>
+    <link rel="stylesheet" href="contactform.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+ 
+    <!-- Header with navigation -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo">Contact Us</div>
+ 
+        <!-- Primary navigation -->
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+          </ul>
+        </nav>
+ 
+        <!-- User account icon -->
+        <div class="user-icon" aria-label="User account">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+      </div>
+    </header>
+ 
+    <!-- Main content area -->
+    <main class="main-content">
+ 
+      <!-- Contact info section -->
+      <section class="contact-info-section" aria-label="Contact information">
+        <div class="contact-details">
+ 
+          <!-- Address block -->
+          <article class="contact-item">
+            <div class="location-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <h2>Our Address</h2>
+              <p>123 Main Street, Suite 4</p>
+              <a href="#" class="contact-link">View on map</a>
+            </div>
+          </article>
+ 
+ 
+          <!-- Phone number block -->
+          <article class="contact-item">
+            <div class="phone-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.08 3.41 2 2 0 0 1 3.07 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <h2>Phone Number</h2>
+              <p>+1 (800) 123-4567</p>
+              <a href="tel:+18001234567" class="contact-link">Call us</a>
+            </div>
+          </article>
+ 
+ 
+          <!-- Email address block -->
+          <article class="contact-item">
+            <div class="email-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <h2>Email Address</h2>
+              <p>hello@company.com</p>
+              <a href="mailto:hello@company.com" class="contact-link">Send email</a>
+            </div>
+          </article>
+ 
+        </div>
+ 
+        <!-- Right: Map -->
+        <div class="map-wrap" aria-label="Map showing office location">
+          <img
+            src="imgs/JPGfiles/map.jpg"
+            alt="Map of our office location at 123 Main Street"
+            width="100%" height="100%"
+            />
+            
+          <!-- Location pin overlay -->
+          <div class="map-pin" aria-hidden="true">
+            <span class="map-pin-dot"></span>
+            <span class="map-pin-label">Our location</span>
+          </div>
+        </div>
+
+        <!-- Company Social Links -->
+        <div class="company-socials">
+          <a href="https://www.facebook.com" aria-label="Facebook" class="social-link">
+                <img src="imgs/JPGfiles/facebook.jpg" alt="Facebook" width="100%" height="auto" style="border-radius: 10px;">
+          </a>
+          <a href="https://x.com" aria-label="Twitter" class="social-link">
+                <img src="imgs/JPGfiles/twitter3.jpg" alt="Twitter" width="110%" style="border-radius: 10px;">
+          </a>
+          <a href="https://www.instagram.com" aria-label="Instagram" class="instagram-social-link">
+                <img src="imgs/JPGfiles/instagram.jpg" alt="Instagram" width="100%" height="auto" style="border-radius: 10px;">
+          </a>
+        </div>
+
+      </section>
+ 
+      <!-- Contact form section -->
+      <section class="contact-form-section" aria-label="Contact form">
+        <div class="form-wrapper">
+          <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="" />
+          </div>
+          <div class="form-row form-row--message">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6"></textarea>
+          </div>
+          <div class="form-submit">
+            <a href="contactconfirm.html" class="submit-btn">Submit</a>
+          </div>
+        </div>
+      </section>
+ 
+    </main>
+ 
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <p class="footer-copy">&copy; 2026 Decked Out Tech. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Terms of Service</a>
+        <a href="#" class="footer-link">Support</a>
+      </div>
+    </footer>
+ 
+  </body>
+</html>
+ 
