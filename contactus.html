@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decked Out Tech — Contact Us Form</title>
+    <link rel="stylesheet" href="contactus.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+ 
+    <!-- ========== HEADER / NAV ========== -->
+    <header class="site-header">
+      <nav class="nav-container">
+        <span class="nav-logo">Contact Us</span>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+        <button class="nav-user" aria-label="User account">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </button>
+      </nav>
+    </header>
+ 
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+ 
+      <!-- ===== INTRO TEXT ===== -->
+      <section class="intro-section">
+        <p class="intro-text">
+          We'd love to hear from you. Reach out through any of the channels below.
+        </p>
+      </section>
+ 
+      <!-- ===== CONTACT INFO + MAP SECTION ===== -->
+      <section class="contact-section">
+ 
+        <!-- Contact Details Column -->
+        <div class="contact-details">
+ 
+          <!-- Office -->
+          <article class="contact-item">
+            <div class="location-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <h2 class="contact-label">Our office</h2>
+              <p class="contact-meta">123 Innovation Drive</p>
+              <p class="contact-meta">Singapore 560123</p>
+              <a href="#" class="contact-link">Get directions</a>
+            </div>
+          </article>
+ 
+          <!-- Email -->
+          <article class="contact-item">
+            <div class="email-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <h2 class="contact-label">Email us</h2>
+              <p class="contact-meta">Available Mon–Fri, 9am–6pm SGT</p>
+              <a href="mailto:hello@store.com" class="contact-link">hello@store.com</a>
+            </div>
+          </article>
+ 
+          <!-- Phone -->
+          <article class="contact-item">
+            <div class="phone-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <h2 class="contact-label">Call us</h2>
+              <p class="contact-meta">+65 6123 4567</p>
+              <a href="#" class="contact-link">Schedule a call</a>
+            </div>
+          </article>
+ 
+        </div>
+ 
+        <!-- Right: Map -->
+        <div class="map-wrap" aria-label="Map showing office location">
+          <img
+            src="imgs/JPGfiles/map.jpg"
+            alt="Map of our office location at 123 Main Street"
+            width="100%"
+          />
+          <!-- Location pin overlay -->
+          <div class="map-pin" aria-hidden="true">
+            <span class="map-pin-dot"></span>
+            <span class="map-pin-label">Our location</span>
+          </div>
+        </div>
+
+        <!-- Company Social Links -->
+        <div class="company-socials">
+          <a href="https://www.facebook.com" aria-label="Facebook" class="social-link">
+                <img src="imgs/JPGfiles/facebook.jpg" alt="Facebook" width="16" height="16" style="border-radius: 10px;">
+          </a>
+          <a href="https://twitter.com" aria-label="Twitter" class="social-link">
+                <img src="imgs/JPGfiles/twitter1.jpg" alt="Twitter" style="border-radius: 10px;">
+          </a>
+          <a href="https://www.instagram.com" aria-label="Instagram" class="social-link">
+                <img src="imgs/JPGfiles/instagram.jpg" alt="Instagram" width="16" height="16" style="border-radius: 10px;">
+          </a>
+        </div>
+      </section>
+ 
+      <!-- ===== CTA SECTION ===== -->
+      <section class="cta-section">
+        <a href="contactform.html" class="btn-contact">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="m22 2-7 20-4-9-9-4 20-7z"/>
+        </svg>
+          Contact Us
+        </a>
+        <p class="cta-note">We typically reply within one business day.</p>
+      </section>
+ 
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <p class="footer-copy">&copy; 2026 Decked Out Tech. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Terms of Service</a>
+        <a href="#" class="footer-link">Support</a> 
+      </div>
+    </footer>
+  </body>
+</html>
+ 
