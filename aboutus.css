@@ -1,0 +1,358 @@
+/* =============================================================
+   CUSTOM PROPERTIES
+   ============================================================= */
+:root {
+  --color-primary:   #3b82f6;   /* blue — social links, accents */
+  --color-secondary: #f59e0b;   /* amber — available for highlights */
+ 
+  --bg-base:    #1a1a1f;
+  --bg-surface: #25252d;
+  --bg-raised:  #2e2e38;
+  --bg-avatar:  #32323e;
+ 
+  --text-primary:   #f0f0f5;
+  --text-secondary: #9898a8;
+  --text-muted:     #60606e;
+ 
+  --border-color: #3a3a48;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+ 
+/* =============================================================
+   RESET & BASE
+   ============================================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+ 
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+ 
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+ 
+h3 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+ 
+a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+ 
+a:hover {
+  color: var(--text-primary);
+}
+ 
+ul {
+  list-style: none;
+}
+ 
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+/* =============================================================
+   HEADER & NAV
+   ============================================================= */
+.site-header {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+ 
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.nav-logo {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+ 
+.nav-links {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+ 
+.nav-links a {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+ 
+.nav-links a:hover {
+  color: var(--text-primary);
+}
+ 
+.nav-user {
+  background-color: var(--bg-raised);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: background-color 0.2s, color 0.2s;
+}
+ 
+.nav-user:hover {
+  color: var(--text-primary);
+}
+ 
+/* =============================================================
+   MAIN
+   ============================================================= */
+.main-content {
+  flex: 1;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 36px 24px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 40px;
+}
+ 
+/* Shared section heading */
+.section-heading {
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+ 
+/* =============================================================
+   WHO WE ARE SECTION
+   ============================================================= */
+.who-section {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+ 
+.who-body {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 680px;
+}
+ 
+/* =============================================================
+   CORE VALUES SECTION
+   ============================================================= */
+.values-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+ 
+.values-grid {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+ 
+/* --- Individual Value Card --- */
+.value-card {
+  flex: 1;
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  border-right: 1px solid var(--border-color);
+}
+ 
+.value-card:last-child {
+  border-right: none;
+}
+ 
+.value-icon {
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+ 
+.value-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+ 
+.value-body {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+ 
+/* =============================================================
+   MEET THE TEAM SECTION
+   ============================================================= */
+.team-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+ 
+.team-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 16px;
+}
+ 
+/* --- Team Card --- */
+.team-card {
+  flex: 1;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 28px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+ 
+/* Avatar circle with initials */
+ 
+.team-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+ 
+.team-role {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+ 
+.team-bio {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 4px;
+}
+ 
+/* Social icons row */
+.team-socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+ 
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-raised);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-secondary);
+  transition: border-color 0.2s, color 0.2s;
+}
+ 
+.social-link:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+ 
+/* =============================================================
+   FOOTER
+   ============================================================= */
+.site-footer {
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-color);
+  padding: 18px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.footer-copy {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.footer-link {
+  font-size: 14px;
+  margin-left: 16px;
+  color: #9898a8;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #f0f0f5;
+  transition: color 0.2s;
+}
+
